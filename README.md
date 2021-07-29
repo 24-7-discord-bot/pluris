@@ -23,12 +23,24 @@ Or the original package:
 ```
 $ npm i pluris
 ```
-After installing Pluris, make sure you initialize Eris with Pluris
+After installing Pluris, make sure you initialize Eris with Pluris.\
+for this fork:
+```js
+const Eris = require('eris');
+require('@24-7-discord-bot/pluris')(Eris);
+```
+for the original package:
 ```js
 const Eris = require('eris');
 require('pluris')(Eris);
 ```
-You will only need to do this once, preferably in your main bot file. To disable specific plugins, supply an object in the second parameter with the plugin name set to false. See below for a list of available plugins
+You will only need to do this once, preferably in your main bot file. To disable specific plugins, supply an object in the second parameter with the plugin name set to false. See below for a list of available plugins.\
+For this fork:
+```js
+const Eris = require('eris');
+require('@24-7-discord-bot/pluris')(Eris, { awaitMessages: false });
+```
+For the original package:
 ```js
 const Eris = require('eris');
 require('pluris')(Eris, { awaitMessages: false });
