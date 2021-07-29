@@ -76,3 +76,6 @@ Message Collector for all textable channels. Includes a MessageCollector class
 
 #### stop
 > Fired when the collector has finished
+> | Parameter | Type    | Description                                               |
+> |-----------|---------|-----------------------------------------------------------|
+> | reason    | String  | Reason why the collector was stopped (includes 'timeout') |

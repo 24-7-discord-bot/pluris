@@ -22,9 +22,11 @@ module.exports = async (Eris, options = {}) => {
 
     plugin.init(Eris, plugins);
     delete plugin.init;
-    console.log(`Loaded plugin: ${k}`);
+    if (process.env.plurisDebug) {
+      console.log('[pluris]', `Loaded plugin: ${k}`);
+    }
     count += 1;
   });
 
-  console.log(`Loaded ${count} pluris plugins`);
+  console.log('[pluris]', `Loaded ${count} pluris plugins`);
 };

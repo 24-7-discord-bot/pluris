@@ -1,5 +1,5 @@
 {
-  "name": "pluris",
+  "name": "@24-7-discord-bot/pluris",
   "version": "0.3.5",
   "description": "Extra prototypes and utilities for the Eris Discord API Library",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bsian03/pluris.git"
+    "url": "git+https://github.com/24-7-discord-bot/pluris.git"
   },
   "keywords": [
     "eris",
@@ -18,9 +18,9 @@
   "author": "Bsian",
   "license": "mit",
   "bugs": {
-    "url": "https://github.com/bsian03/pluris/issues"
+    "url": "https://github.com/24-7-discord-bot/pluris/issues"
   },
-  "homepage": "https://github.com/bsian03/pluris#readme",
+  "homepage": "https://github.com/24-7-discord-bot/pluris#readme",
   "peerDependencies": {
     "eris": ">=0.15.0"
   },

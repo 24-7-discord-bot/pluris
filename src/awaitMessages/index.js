@@ -86,12 +86,12 @@ class MessageCollector extends EventEmitter {
       this.on('update', this.onUpdate);
       this.on('delete', this.onDelete);
 
-      if (this.timeout) setTimeout(() => this.stop(), this.timeout);
+      if (this.timeout) setTimeout(() => this.stop('timeout'), this.timeout);
       this.once('stop', () => res(this));
     });
   }
 
-  stop() {
+  stop(reason) {
     this.running = false;
     this.channel.client.setMaxListeners(this.getMaxListeners() - 1);
     this.channel.client.off('messageCreate', this._onMessageCreate);
@@ -102,7 +102,7 @@ class MessageCollector extends EventEmitter {
     this.off('collect', this.onCollect);
     this.off('update', this.onUpdate);
     this.off('delete', this.onDelete);
-    this.emit('stop');
+    this.emit('stop', reason);
     return this;
   }
 
