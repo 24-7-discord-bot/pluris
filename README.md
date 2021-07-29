@@ -5,7 +5,7 @@ Extra prototypes and utilities for the [Eris](https://npmjs.com/package/eris) Di
 
 ## About this fork
 This fork has the following changes:
-- Changed some logging to only log if enviroment variable "plurisDebug" is a positive value
+- Changed some logging to only log if environment variable "plurisDebug" is a positive value
 - Addded support for a stop reason in awaitMessages (see [awaitMessages docs](https://github.com/24-7-discord-bot/pluris/blob/master/docs/awaitMessages.md#stop-1))
 
 ---
@@ -23,7 +23,7 @@ Or the original package:
 ```
 $ npm i pluris
 ```
-After installing Pluris, make sure you initialise Eris with Pluris
+After installing Pluris, make sure you initialize Eris with Pluris
 ```js
 const Eris = require('eris');
 require('pluris')(Eris);
