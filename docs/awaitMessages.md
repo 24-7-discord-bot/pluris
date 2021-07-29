@@ -50,8 +50,11 @@ Message Collector for all textable channels. Includes a MessageCollector class
 >
 > Returns `Promise<MessageCollector>`
 
-#### stop()
+#### stop(reason)
 > Stop collecting messages
+> | Parameter | Type    | Default | Description               |
+> |-----------|---------|---------|---------------------------|
+> | reason    | String  |         | With what reason the collector was stopped (primarily used for timeout) \| optional |
 >
 > Returns `void`
 

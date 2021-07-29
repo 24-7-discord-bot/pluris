@@ -3,12 +3,24 @@ Pluris
 
 Extra prototypes and utilities for the [Eris](https://npmjs.com/package/eris) Discord API Library
 
+## About this fork
+This fork has the following changes:
+- Changed some logging to only log if enviroment variable "plurisDebug" is a positive value
+- Addded support for a stop reason in awaitMessages (see [awaitMessages docs](https://github.com/24-7-discord-bot/pluris/blob/master/docs/awaitMessages.md#stop-1))
+
 ---
 Installation and Usage
 ----------------------
 You will need to have at least Eris v0.15.0 installed. Previous versions of Eris may work but will not be tested for compatibility with the current version of Pluris. You must also make sure that other packages do not conflict with Pluris.
 
-```sh
+This fork:
+```
+npm i github:24-7-discord-bot/pluris
+```
+
+Or the original package:
+
+```
 $ npm i pluris
 ```
 After installing Pluris, make sure you initialise Eris with Pluris
